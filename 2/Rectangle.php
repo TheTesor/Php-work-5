@@ -25,14 +25,3 @@ class Rectangle
         return 2 * ($this->length + $this->width);
     }
 }
-
-// Создание объекта
-try {
-    $rectangle = new Rectangle(5.5, 3.2);
-
-    // Вывод площади и периметра
-    echo "Площадь прямоугольника: " . $rectangle->getArea() . "\n";
-    echo "Периметр прямоугольника: " . $rectangle->getPerimeter() . "\n";
-} catch (InvalidArgumentException $e) {
-    echo "Ошибка: " . $e->getMessage();
-}
